@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <link href="styles/style.css" rel="stylesheet" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Posts</title>
+  </head>
+  <body>
+    <form class="newPostForm">
+      <input
+        type="text"
+        placeholder="Заголовок"
+        class="newPostTitle"
+        required
+      />
+      <textarea placeholder="Текст поста" class="newPostBody" required>
+      </textarea>
+      <select class="newPostAuthor" required></select>
+      <button type="submit">Создать пост</button>
+    </form>
+
+    <div class="container"></div>
+    <button class="backToList">Назад к ленте</button>
+  </body>
+  <script src="scripts/readMore.js"></script>
+</html>

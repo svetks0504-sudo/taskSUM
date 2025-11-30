@@ -44,13 +44,31 @@
 Немедленно отобразить его в ленте
 Очистить форму
 
-Поиск по постам:
-Поле поиска над лентой
-Поиск работает по заголовку и тексту поста
-Поиск должен работать совместно с фильтром по автору
-
 API Endpoints:
 
 https://jsonplaceholder.typicode.com/posts
 https://jsonplaceholder.typicode.com/users
 https://jsonplaceholder.typicode.com/comments
+
+1. (для себя распишу как сокращять
+   function checkAuthor(element) {
+   //условие
+   if (element.id === post.userId) {
+   return true;
+   } else {
+   return false;
+   }
+   }
+   const author = users.find(checkAuthor);)
+
+const author = users.find((user) => user.id === post.userId);
+const commentCount = comments.filter((c) => c.postId === post.id).length; здесь .length количество коментареев.
+
+2. додаем на страницу для перехода только по post.id конкретного:
+
+window.location.href = `/readMore.html?id=${post.id}`
+
+//На странице readMore.html нужно получить id из URL:
+
+const urlParams = new URLSearchParams(window.location.search);
+const someId = Number(urlParams.get("id")); // id поста

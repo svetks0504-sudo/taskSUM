@@ -3,3 +3,100 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  background-color: black;
+  padding: 4vw;
+}
+.containerForCarts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  padding: 2vw 0;
+  background-color: black;
+  gap: 1.5vw;
+}
+.usersSelect {
+  width: 45%;
+  margin: 4vw;
+  padding: 1vw;
+  border-radius: 5px;
+  background-color: rgb(146, 103, 185);
+  color: black;
+  font-size: 1.1rem;
+}
+.cart {
+  width: 90%;
+  background-color: rgb(93, 25, 156);
+  color: black;
+  border-radius: 10px;
+  padding: 2vw;
+  font-size: 1.1rem;
+}
+button {
+  border-radius: 5px;
+  padding: 0.8vw;
+  margin: 1vw;
+  background-color: rgb(122, 122, 122);
+}
+/*####### url(../readMore.html)##### */
+.container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 5vw;
+  height: auto;
+  background-color: rgb(93, 25, 156);
+  border-radius: 10px;
+  padding: 4vw;
+  margin-top: 4vw;
+}
+.newPostForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  gap: 1vw;
+  background-color: rgb(0, 0, 0);
+}
+.newPostTitle {
+  width: 100%;
+  padding: 1vw;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  background-color: rgb(146, 103, 185);
+  color: black;
+}
+.newPostTitle::placeholder {
+  color: black;
+}
+.newPostBody {
+  width: 100%;
+  resize: vertical;
+  border: none;
+  border-radius: 10px;
+  padding: 1vw;
+  font-size: 1rem;
+  font-family: Arial, sans-serif;
+  color: rgb(32, 32, 32);
+  min-height: 5vw;
+  background-color: rgb(146, 103, 185);
+  color: black;
+}
+.newPostBody::placeholder {
+  color: black;
+}
+.newPostAuthor {
+  width: 100%;
+  padding: 0.5rem;
+  color: black;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(146, 103, 185);
+}
